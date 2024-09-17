@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Pawgis Restaurant</title>
+
+    <style>
+        p {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .image {
+            background-image: url("image1.jpg"), url("image2.webp");
+            background-size: cover, contain;
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, center;
+            height: 400px; /* Adjust the height as needed */
+            width: 100%; /* Full width */
+            position: relative; 
+            
+
+        }
+        .image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 145%;
+            background-image: url("image1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(3px);
+            z-index: 1; /* Ensure it’s on top of the background */
+            opacity:  /* Adjust opacity to make it blend well */
+        }
+        .image::after {
+            content: "";
+            position: absolute;
+            top: 120px;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            background-image: url("image2.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(px);
+            z-index: 1; /* Ensure it’s below the pseudo-element with blur */
+            opacity: 0.9; /* Adjust opacity to make it blend well */
+        }
+        h1 {
+            text-align: left;
+            font-weight: bold;
+            font-style: italic;
+            margin-left :1px;  /* Add some space around the h1 */
+           margin-top: 1px;
+            position: relative; /* Ensure it’s above the images */
+            z-index: 2;
+            background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); 
+
+        }
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
+  color: rgb(247, 238, 238);
+  font-weight: bold;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 2;
+ width: 250px;
+  padding: 25px;
+  text-align:center;
+}
+ h1{
+    color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  text-align:center;
+ }           
+ .text { color: white;
+  font-weight:bold ;
+  position: absolute;
+  top: 10%;
+  left: 76%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 2;
+ width: 250px;
+  padding: 25px;
+  text-align:left; 
+text-decoration: underline;
+display:inline ;}
+
+.text:hover{
+   opacity: 0.7;
+}
+.text2{ color: white;
+  font-weight:bold ; 
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 2;
+ width: 250px;
+  padding: 25px;
+  text-align:left; 
+text-decoration: underline;
+display:inline-flex;}
+
+.text2:hover{
+   opacity: 0.7;
+}
+.text3{
+    color: white;
+  font-weight:bold ; 
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 2;
+ width: 250px;
+  padding: 25px;
+  text-align:left; 
+text-decoration: underline;
+}
+.text3:hover{
+   opacity: 0.7;
+}
+
+               
+    </style>
+</head>
+<body>
+    <h1>Hamburguesa Restaurante </h1>
+    <div class="bg-text"> <p> A food that reach to your hear </p>
+</div>
+ <a href="about us.html">    <div class=" text"> About us </div> </a>
+<a href="contact.html"> <div class="text2"> Contact</div>  </a>
+<a href="menu list.html"> <div class="text3"> Restaurant Menu</div></a>
+    <div class="image"></div>
+</body>
+</html>

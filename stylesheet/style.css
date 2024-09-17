@@ -1,0 +1,157 @@
+/*body{ 
+    font-family:'times new roman';
+    font-style: italic;
+}
+.container{  width: 1180px;
+margin: 0 auto;}
+h1{ text-align: center;}
+h2{ text-align: center;}
+.food-area{background-color: #f4f4f4;
+padding: 100px;}
+
+.single-food{ 
+    display: flex;
+    flex-wrap: wrap;
+ }*/
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  background-color: rgb(241, 232, 232);
+    color: #333;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title Section */
+.title {
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff4500;
+
+}
+.link-text{
+    margin: 1px;
+    color: rgb(32, 30, 29);
+    z-index: 2;
+    top: 8%;
+    left: 3%; 
+    /*position: absolute*/
+font-weight: bold;
+text-decoration:underline; 
+    
+}
+
+.title h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Food Area */
+.food-area {
+    padding: 20px;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Individual Food Packages */
+.single-food {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food {
+    text-align: center;
+}
+
+.food img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.food h3 {
+    font-size: 24px;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+/* Food List */
+.food-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.food-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-list span {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Order Button */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #e63900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-food {
+        width: 100%;
+    }
+}
+
+
+
